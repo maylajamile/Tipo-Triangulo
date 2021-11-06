@@ -97,12 +97,12 @@ public class telaTriangulo extends javax.swing.JFrame {
         });
 
         lblStatus.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        lblStatus.setForeground(new java.awt.Color(102, 204, 255));
+        lblStatus.setForeground(new java.awt.Color(0, 51, 204));
         lblStatus.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblStatus.setText("Forma ou nao?");
 
         lblTipo.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        lblTipo.setForeground(new java.awt.Color(255, 153, 153));
+        lblTipo.setForeground(new java.awt.Color(102, 0, 204));
         lblTipo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTipo.setText("Tipo de Triangulo");
 
@@ -212,16 +212,16 @@ public class telaTriangulo extends javax.swing.JFrame {
         int c = sliC.getValue();
         
         if (a< b+c && b< a+c && c< a+b){
-            lblStatus.setText("Forma um triangulo");
+            lblStatus.setText("Forma um triângulo!");
             if (a==b && b==c){
-                lblTipo.setText("Triangulo Equilatero");
+                lblTipo.setText("É um Triângulo Equilátero");
             }else if (a!=b && b!=c && a!=c){
-                lblTipo.setText("Triangulo Escaleno");
+                lblTipo.setText("É um Triângulo Escaleno");
             }else {
-                lblTipo.setText("Triangulo Isosceles");
+                lblTipo.setText("É um Triângulo Isósceles");
             }
         }else{
-            lblStatus.setText("Nao forma um triangulo");
+            lblStatus.setText("Não forma um triângulo!");
             lblTipo.setText("--------");
         }
     }//GEN-LAST:event_btnVerificarActionPerformed
